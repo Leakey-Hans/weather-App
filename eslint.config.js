@@ -4,7 +4,13 @@ import globals from "globals";
 export default [
   // 1. Tell ESLint which files to ignore (replaces .eslintignore)
     { 
-        ignores: ["node_modules/", "dist/", "build/"] 
+        ignores: ["node_modules/", 
+                "dist/", 
+                "build/",
+                "eslint.config.js",
+                "webpack.dev.js",
+                "webpack.prod.js"
+            ] 
     },
 
   // 2. Base configuration for your source code
