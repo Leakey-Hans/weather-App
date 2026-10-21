@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(21, 16, 34);
+    min-height: 100vh;
+    color: #fff;
+    background-image: 
+    radial-gradient(
+        ellipse 30% 35% at 50% 50%,
+        rgba(255, 170, 70, 0.45) 0%,
+        rgba(178, 149, 114, 0.25) 45%,
+        transparent 75%
+    );
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    width: 100%;
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-input {
+    min-height: 4vh;
+    background-color: #fff;
+    opacity: 20%;
+    border-radius: 8px;
+    padding: 10px;
+    color: white;
+    width: 300px;
+}
+
+.search-btn {
+    min-height: 5vh;
+    width: 40px;
+    border-radius: 8px;
+    opacity: 30%;
+}
+
+/*Smartphones*/
+@media (max-width: 480px) {
+   body {
+    margin: 0;
+    background-color: rgb(21, 16, 34);
+    min-height: 100vh;
+    color: #fff;
+    background-image: 
+    radial-gradient(
+        ellipse 70% 45% at 80% 40%, 
+        rgba(255, 170, 70, 0.45) 0%,
+        rgba(178, 149, 114, 0.25) 50%,
+        transparent 75%
+    );
+    background-repeat: no-repeat;
+}
+}
+
+
+
+
