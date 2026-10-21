@@ -11,12 +11,13 @@ body {
     color: #fff;
     background-image: 
     radial-gradient(
-        ellipse 30% 35% at 50% 50%,
+        ellipse 30% 45% at 50% 35%,
         rgba(255, 170, 70, 0.45) 0%,
         rgba(178, 149, 114, 0.25) 45%,
         transparent 75%
     );
     background-repeat: no-repeat;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .navbar {
@@ -31,17 +32,96 @@ body {
     min-height: 4vh;
     background-color: #fff;
     opacity: 20%;
-    border-radius: 8px;
-    padding: 10px;
-    color: white;
-    width: 300px;
+    border-radius: 15px;
+    padding-left: 20px;
+    color: rgb(8, 0, 255);
+    flex: 80% 1 0;
 }
 
 .search-btn {
     min-height: 5vh;
-    width: 40px;
-    border-radius: 8px;
+    border-radius: 12px;
     opacity: 30%;
+    flex: 1 1 0;
+    background-color: #fff;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+    gap: 10px;
+    padding: 5px 10px;
+}
+
+.location {
+    min-height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: #ffff;
+}
+
+.meta {
+    color: rgb(130, 130, 130);
+    font-size: 1.3rem;
+    line-height: 5px;
+}
+
+.weather-icon {
+    min-height: 25vh;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.temp-desc {
+    min-height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.temperature {
+    font-size: 3.0rem;
+    color: #ffff;
+}
+
+.description {
+    color: #ffff;
+    font-size: 1rem;
+}
+
+.stats {
+    min-height: 7vh;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.hourly-head {
+    padding: 10px;
+}
+
+/* Where I left */
+
+.hourly-section {
+    background-color: burlywood;
+    min-height: 20vh;
+    display: grid;
+    grid-template:  1;
+}
+
+.hourly-forecast {
+    border: 2px solid red;
+    min-height: 18vh;
+    flex-basis: 300px;
+
 }
 
 /*Smartphones*/
@@ -53,7 +133,7 @@ body {
     color: #fff;
     background-image: 
     radial-gradient(
-        ellipse 70% 45% at 80% 40%, 
+        ellipse 80% 45% at 50% 35%, 
         rgba(255, 170, 70, 0.45) 0%,
         rgba(178, 149, 114, 0.25) 50%,
         transparent 75%
