@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'asap-font-normal';
+    src: url(./assets/fonts/Asap_Sharp/AsapSharp-VariableFont_wdth\,wght.ttf);
+}
+
 body {
     margin: 0;
     background-color: rgb(21, 16, 34);
@@ -17,7 +22,31 @@ body {
         transparent 75%
     );
     background-repeat: no-repeat;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'asap-font-normal';
+}
+
+.temp-toggle {
+    display: flex;
+    margin-top: 8px;
+    align-items: center;
+    border: 2px solid rgb(21, 16, 34);
+    border-radius: 8px;
+}
+
+.celcious, 
+.farenheit {
+    width: 50px;
+    text-align: center;
+    background-color: rgb(21, 16, 34);
+    min-height: 5vh;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.active {
+    background-color: transparent;
 }
 
 .navbar {
@@ -50,7 +79,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     width: 800px;
-    gap: 10px;
+    gap: 5px;
     padding: 5px 10px;
 }
 
@@ -106,22 +135,30 @@ body {
 
 .hourly-head {
     padding: 10px;
+    text-align: center;
 }
 
-/* Where I left */
-
 .hourly-section {
-    background-color: burlywood;
     min-height: 20vh;
-    display: grid;
-    grid-template:  1;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding-left: 8px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .hourly-forecast {
-    border: 2px solid red;
     min-height: 18vh;
-    flex-basis: 300px;
-
+    width: 120px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background-color: #4e4d64;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
 }
 
 /*Smartphones*/
@@ -139,6 +176,23 @@ body {
         transparent 75%
     );
     background-repeat: no-repeat;
+}
+
+.hourly-section {
+    min-height: 20vh;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding-left: 8px;
+    overflow: hidden;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    justify-content: start;
+}
+
+.hourly-head {
+    padding: 10px;
+    text-align: start;
 }
 }
 
