@@ -59,20 +59,20 @@ body {
 
 .form-input {
     min-height: 4vh;
-    background-color: #fff;
-    opacity: 20%;
+    background-color: #4e4d64;
     border-radius: 15px;
     padding-left: 20px;
-    color: rgb(8, 0, 255);
+    color: #ffff;
     flex: 80% 1 0;
+    border: 2px solid #4e4d64;
 }
 
 .search-btn {
     min-height: 5vh;
     border-radius: 12px;
-    opacity: 30%;
     flex: 1 1 0;
-    background-color: #fff;
+    background-color: #4e4d64;
+    border: 2px solid #4e4d64;
 }
 
 .form {
@@ -136,6 +136,7 @@ body {
 .hourly-head {
     padding: 10px;
     text-align: center;
+    gap: 6px;
 }
 
 .hourly-section {
@@ -159,6 +160,16 @@ body {
     justify-content: center;
     flex-direction: column;
     gap: 8px;
+}
+
+.stat-item {
+    display: flex;
+    gap: 10px;
+}
+
+.day-description {
+    color: #716f6f;
+    padding: 10px;
 }
 
 /*Smartphones*/

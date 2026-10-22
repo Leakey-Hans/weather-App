@@ -12,4 +12,4 @@ import './styles.css';
 //     }
 // }
 
-getLocationData('Nairobi');
+// getLocationData('Nairobi');
