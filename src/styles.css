@@ -149,7 +149,7 @@ body {
     flex-wrap: wrap;
 }
 
-.hourly-forecast {
+.daily-forecast {
     min-height: 18vh;
     width: 120px;
     flex-shrink: 0;
@@ -165,11 +165,13 @@ body {
 .stat-item {
     display: flex;
     gap: 10px;
+    align-items: center;
 }
 
 .day-description {
-    color: #716f6f;
+    color: #bebebe;
     padding: 10px;
+    text-align: center;
 }
 
 /*Smartphones*/
@@ -211,31 +213,11 @@ body {
     display: none;
 }
 
-/* HTML: <div class="loader"></div> */
-.loader-spinner {
-  width: 35px;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  border: 8px solid #0000;
-  border-right-color: #ffa50097;
-  position: relative;
-  animation: l24 1s infinite linear;
-}
-.loader:before,
-.loader:after {
-  content: "";
-  position: absolute;
-  inset: -8px;
-  border-radius: 50%;
-  border: inherit;
-  animation: inherit;
-  animation-duration: 2s;
-}
-.loader:after {
-  animation-duration: 4s;
-}
-@keyframes l24 {
-  100% {transform: rotate(1turn)}
+.wind-speed,
+.humidity,
+.uv-index,
+.time-zone {
+    font-size: 1rem;
 }
 
 /* HTML: <div class="loader"></div> */
@@ -249,13 +231,10 @@ body {
     var(--_g) 100% 50%;
   background-size: calc(100%/3) 100%;
   animation: l7 1s infinite linear;
+  margin-left: 50%;
 }
 @keyframes l7 {
     33%{background-size:calc(100%/3) 0%  ,calc(100%/3) 100%,calc(100%/3) 100%}
     50%{background-size:calc(100%/3) 100%,calc(100%/3) 0%  ,calc(100%/3) 100%}
     66%{background-size:calc(100%/3) 100%,calc(100%/3) 100%,calc(100%/3) 0%  }
 }
-
-
-
-
